@@ -23,3 +23,4 @@ Intel(R) Wi-Fi 6 AX201 1 60MHz
 注：由于本人n卡，请各位食用把sip和系统保护开启（支持macos12）
 自行定制usb，使用军刀或usbtoolbox
 感谢大佬的付出，使得我能在这种配置使用macos12
+ps：ssdt由https://github.com/OrangJuc 橙汁大佬所编辑，完美睡眠唤醒
