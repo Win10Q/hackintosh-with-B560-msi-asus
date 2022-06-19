@@ -42,3 +42,7 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 - `config.plist`勾上仿冒苹果快捷键`PollAppleHotKey`，在启动选择界面，先选中要启动的项，然后按键盘的 `Ctrl` + `Enter` 进入系统即可
 
 - 也有看到说在 `设置`-`启动磁盘` 可选择默认启动项,修改后重启
+
+### 鸣谢
+- https://github.com/OrangJuc/
+- 提供ssdt的修改
