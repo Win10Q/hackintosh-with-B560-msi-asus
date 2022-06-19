@@ -27,7 +27,15 @@
 
 - USB设备从S3/S4/S5唤醒：允许
 - PS/2鼠标从S3/S4/S5唤醒：允许
-- USB键盘从S3/S4/S5唤醒：任意键
+- USB键盘从S3/S4/S5唤醒：任意
+
+### 安装过程
+- 准备安装U盘：参考OC官方配置，十分好用：[USB Creation](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install.html#setting-up-opencore-s-efi-environment)，包含macOS、Windows、Linux的U盘制作。
+- (重要)使用OpenCoreConfigurator打开我提供的EFI的OC/config.plist 重新生成SystemSerialNumber/SystemUUID/MLB
+- 将当前提供的EFI放入U盘EFI磁盘目录下，表示使用当前EFI进行引导
+- 开机配置主板各项配置，以及设置U盘UEFI启动顺序第一
+- 插入U盘，选择U盘UEFI启动，进行安装系统
+- 安装完成进入系统，成功!
 
 ### 系统时差
 
