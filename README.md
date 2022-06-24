@@ -28,9 +28,23 @@
 
 ### BIOS设置
 
-- USB设备从S3/S4/S5唤醒：允许
-- PS/2鼠标从S3/S4/S5唤醒：允许
-- USB键盘从S3/S4/S5唤醒：任意
+- Boot -- Fast Boot -> Disabled
+- Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
+- Boot -- CSM(Compatibility Support Module) -> Disabled
+- Ai Tweaker -- Ai Overclock Tuner -> XMP
+- Advanced -- CPU configuration -- Intel Virtualization Technology -> Disabled
+- Advanced -- System Agent (SA) Configuration -- VT-D -> Disabled
+- Advanced -- System Agent (SA) Configuration -- Above 4G Decoding -> Disabled
+- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- Primary Display -> PCIE 独立显卡配置 1
+- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- iGPU Multi-Monitor -> Enabled 独立显卡配置 2
+- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- Primary Display -> CPU Graphics 集成显卡配置1
+- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- iGPU Multi-Monitor -> Disabled 集成显卡配置2
+- Advanced -- PCH configruation - IOAPIC 24-119 Entries -> Enabled
+- Advanced -- PCH-FW Configuration -- TPM Device Selection -> Discrete TPM
+- Advanced -- APM Configuration -- ErP Ready -> Disabled
+- Advanced -- Network Stack Configuration -- Network Stack -> Disabled
+- Boot -- Secure Boot -- OS Type -- Other OS
+最后需要 按键盘上的 F10 键保存退出即可.
 
 ### 安装过程
 - 准备安装U盘：参考OC官方配置，十分好用：[USB Creation](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install.html#setting-up-opencore-s-efi-environment)，包含macOS、Windows、Linux的U盘制作。
