@@ -757,7 +757,7 @@
                 <key>SystemSerialNumber</key>
                 <string>114514</string>
                 <key>SystemUUID</key>
-                <string>000000000000000000000000000000000000000</string>
+                <string>0000000000000000000</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
