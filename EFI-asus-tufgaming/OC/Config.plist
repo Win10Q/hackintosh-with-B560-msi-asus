@@ -168,7 +168,7 @@
         <dict>
             <key>Add</key>
             <dict>
-                <key>PciRoot(0x0)/Pci(0x1f,0x3)  </key>
+                <key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
                 <dict>
                     <key>layout-id</key>
                     <string>66</string>
@@ -440,7 +440,7 @@
                 <key>ProvideCurrentCpuInfo</key>
                 <false/>
                 <key>SetApfsTrimTimeout</key>
-                <integer>0</integer>
+                <integer>-1</integer>
                 <key>ThirdPartyDrives</key>
                 <false/>
                 <key>XhciPortLimit</key>
