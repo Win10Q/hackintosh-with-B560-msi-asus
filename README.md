@@ -5,13 +5,15 @@
 
 |项目|名称
 |-|-
-|CPU|Intel 11th CORE 11400
+|CPU1|Intel 11th CORE 11400
+|CPU2|Intel 11th CORE 11600k
 |主板1|ASUS TUF GAMING B560M PLUS WIFI
-|主板2|MSI MORTARB560M
+|主板2|MSI MORTAR B560M
 |内存|corsair DDR4 3200MHz 8Gx2
 |显卡|AMD RX6600XT
 |硬盘|SAMSUNG 980PRO 500GB
-|无线网卡|AX201
+|无线网卡1|AX201
+|无线网卡2|FV-T919(BCM94360CD)
 
 ### 功能测试
 
@@ -26,7 +28,7 @@
 [❌] 核显硬件加速
 
 ### 警告
-- 由于本人硬盘trim开机太慢，SetApfsTrimTimeout已设置为0，请各位自行改为-1
+- 由于本人硬盘trim开机太慢，SetApfsTrimTimeout已设置为0，请各位自行改为-1 PS(已解决
 
 ### BIOS设置
 
