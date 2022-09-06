@@ -709,7 +709,7 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>F5K9132004NFHDD8C</string>
+                <string>114514</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -723,9 +723,9 @@
                 <key>SystemProductName</key>
                 <string>MacPro7,1</string>
                 <key>SystemSerialNumber</key>
-                <string>F5KYH3ZJP7QM</string>
+                <string>114514</string>
                 <key>SystemUUID</key>
-                <string>072319BB-A788-48DF-AF16-9B275498ED12</string>
+                <string>114514</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
