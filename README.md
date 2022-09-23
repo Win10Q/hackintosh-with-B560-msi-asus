@@ -5,7 +5,7 @@
 
 |项目|名称
 |-|-
-|CPU0|Intel 11th CORE all
+|CPU0|Intel 10th CORE all
 |CPU1|Intel 11th CORE 11400
 |CPU2|Intel 11th CORE 11600k
 |主板1|ASUS TUF GAMING B560M PLUS WIFI
