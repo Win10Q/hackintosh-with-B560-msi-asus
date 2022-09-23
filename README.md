@@ -31,6 +31,7 @@
 
 ### 警告
 - 由于本人硬盘trim开机太慢，SetApfsTrimTimeout已设置为0，请各位自行改为-1 PS(已解决
+- 10代的各位请把EFI-OC内的config10重命名为config
 
 ### BIOS设置
 
