@@ -6,23 +6,23 @@
 |项目|名称
 |-|-
 |CPU0|Intel 10th CORE all
-|CPU1|Intel 11th CORE 11400
-|CPU2|Intel 11th CORE 11600k
+|CPU1|Intel 11th CORE all
 |主板1|ASUS TUF GAMING B560M PLUS WIFI
 |主板2|MSI MORTAR B560M
 |主板3|ASUS H510-B560 均支持
+|主板4|MSI H510-B560 均支持
 |内存|corsair DDR4 3200MHz 8Gx2
 |显卡|AMD RX6600XT
 |硬盘1|SAMSUNG 980PRO 500GB
 |硬盘2|TUSHIBA RC10 250GB
-|无线网卡1|AX201
+|无线网卡1|AX201/200
 |无线网卡2|FV-T919(BCM94360CD)
 
 ### 功能测试
 
 - [x] 板载声卡
 - [x] 板载网卡
-- [x] 睡眠唤醒
+- [x] 睡眠唤醒（华硕usb唤醒需要去掉GPRW,但是本人测试风扇会唤醒不停）
 - [x] CPU 变频
 - [x] 所有USB端口
 - [x] 接力和隔空投送
@@ -33,8 +33,47 @@
 ### 警告
 - 由于本人硬盘trim开机太慢，SetApfsTrimTimeout已设置为0，请各位自行改为-1 PS(已解决
 - 10代的各位请把EFI-OC内的config10重命名为config
-
+- 10代+500系要独显/定制hdmi才可食用（具体请参考b站乌龙蜜桃来一打视频-尚未制作完成）
 ### BIOS设置
+#### ASUS-11th
+
+- disable igpu（Otherwise, you will not be able to sleep normally）
+- disable Intel Rapid Storage Technology
+
+#### ASUS-10th
+- Disabe
+- Fast Boot
+- VT-d
+- CSM
+- Intel SGX
+- CFG Lock
+- Enable
+- VT-x (no option in BIOS, it's enabled by default)
+- Above 4G decoding
+- Hyper-Threading
+- EHCI/XHCI Hand-off
+- OS type: Windows UEFI Mode (Clear Secure Boot Keys or choose `Other` type)
+- DVMT Pre-Allocated(iGPU Memory): 64MB
+
+#### MSI-10th
+
+- Boot -- Fast Boot -> Disabled
+- Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
+- Boot -- CSM(Compatibility Support Module) -> Disabled
+- Ai Tweaker -- Ai Overclock Tuner -> XMP
+- Advanced -- CPU configuration -- Intel Virtualization Technology -> Disabled
+- Advanced -- System Agent (SA) Configuration -- VT-D -> Disabled
+- Advanced -- System Agent (SA) Configuration -- Above 4G Decoding -> Disabled
+- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- Primary Display -> CPU Graphics 集成显卡配置1
+- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- iGPU Multi-Monitor -> Disabled 集成显卡配置2
+- Advanced -- PCH configruation - IOAPIC 24-119 Entries -> Enabled
+- Advanced -- PCH-FW Configuration -- TPM Device Selection -> Discrete TPM
+- Advanced -- APM Configuration -- ErP Ready -> Disabled
+- Advanced -- Network Stack Configuration -- Network Stack -> Disabled
+- Boot -- Secure Boot -- OS Type -- Other OS
+最后需要 按键盘上的 F10 键保存退出即可.
+
+#### MSI-11th
 
 - Boot -- Fast Boot -> Disabled
 - Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
@@ -45,15 +84,12 @@
 - Advanced -- System Agent (SA) Configuration -- Above 4G Decoding -> Disabled
 - Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- Primary Display -> PCIE 独立显卡配置 1
 - Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- iGPU Multi-Monitor -> Enabled 独立显卡配置 2
-- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- Primary Display -> CPU Graphics 集成显卡配置1
-- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- iGPU Multi-Monitor -> Disabled 集成显卡配置2
 - Advanced -- PCH configruation - IOAPIC 24-119 Entries -> Enabled
 - Advanced -- PCH-FW Configuration -- TPM Device Selection -> Discrete TPM
 - Advanced -- APM Configuration -- ErP Ready -> Disabled
 - Advanced -- Network Stack Configuration -- Network Stack -> Disabled
 - Boot -- Secure Boot -- OS Type -- Other OS
 最后需要 按键盘上的 F10 键保存退出即可.
-
 ### 安装过程
 - 准备安装U盘：参考OC官方配置，十分好用：[USB Creation](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install.html#setting-up-opencore-s-efi-environment)，包含macOS、Windows、Linux的U盘制作。
 - (重要)使用OpenCoreConfigurator打开我提供的EFI的OC/config.plist 重新生成SystemSerialNumber/SystemUUID/MLB
