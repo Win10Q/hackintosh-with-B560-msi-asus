@@ -188,6 +188,19 @@
                     <key>layout-id</key>
                     <string>66</string>
                 </dict>
+                <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+                <dict>
+                    <key>AAPL,ig-platform-id</key>
+                    <data>BwCbPg==</data>
+                    <key>AAPL00,override-no-connect</key>
+                    <data></data>
+                    <key>framebuffer-con0-alldata</key>
+                    <data>AQEJAAAIAADHAwAA</data>
+                    <key>framebuffer-con0-enable</key>
+                    <data>AQAAAA==</data>
+                    <key>framebuffer-patch-enable</key>
+                    <data>AQAAAA==</data>
+                </dict>
             </dict>
             <key>Delete</key>
             <dict/>
