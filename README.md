@@ -33,7 +33,7 @@
 ### 警告
 - 由于本人硬盘trim开机太慢，SetApfsTrimTimeout已设置为0，请各位自行改为-1 PS(已解决
 - 10代的各位请把EFI-OC内的config10重命名为config
-
+- 10代+500系要独显/定制hdmi才可食用（具体请参考b站乌龙蜜桃来一打视频-尚未制作完成）
 ### BIOS设置
 
 - Boot -- Fast Boot -> Disabled
