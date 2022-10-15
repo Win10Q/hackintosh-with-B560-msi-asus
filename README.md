@@ -38,7 +38,8 @@
 #### ASUS-11th
 
 - only disable igpu（Otherwise, you will not be able to sleep normally）
-- ASUS-10th
+
+#### ASUS-10th
 - Disabe
 - Fast Boot
 - VT-d
