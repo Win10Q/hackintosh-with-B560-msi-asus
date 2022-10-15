@@ -53,7 +53,9 @@
 - EHCI/XHCI Hand-off
 - OS type: Windows UEFI Mode (Clear Secure Boot Keys or choose `Other` type)
 - DVMT Pre-Allocated(iGPU Memory): 64MB
-- MSI-10th
+
+#### MSI-10th
+
 - Boot -- Fast Boot -> Disabled
 - Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
 - Boot -- CSM(Compatibility Support Module) -> Disabled
