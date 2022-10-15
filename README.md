@@ -9,8 +9,8 @@
 |CPU1|Intel 11th CORE all
 |主板1|ASUS TUF GAMING B560M PLUS WIFI
 |主板2|MSI MORTAR B560M
-|主板3|ASUS H510-B560 均支持
-|主板4|MSI H510-B560 均支持
+|主板3|ASUS H510-B560 均支持（igpu需遍历
+|主板4|MSI H510-B560 均支持（igpu需遍历
 |内存|corsair DDR4 3200MHz 8Gx2
 |显卡|AMD RX/intel uhd630
 |硬盘1|SAMSUNG 980PRO 500GB
