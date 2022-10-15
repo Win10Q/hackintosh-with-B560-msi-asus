@@ -6,16 +6,16 @@
 |项目|名称
 |-|-
 |CPU0|Intel 10th CORE all
-|CPU1|Intel 11th CORE 11400
-|CPU2|Intel 11th CORE 11600k
+|CPU1|Intel 11th CORE all
 |主板1|ASUS TUF GAMING B560M PLUS WIFI
 |主板2|MSI MORTAR B560M
 |主板3|ASUS H510-B560 均支持
+|主板4|MSI H510-B560 均支持
 |内存|corsair DDR4 3200MHz 8Gx2
 |显卡|AMD RX6600XT
 |硬盘1|SAMSUNG 980PRO 500GB
 |硬盘2|TUSHIBA RC10 250GB
-|无线网卡1|AX201
+|无线网卡1|AX201/200
 |无线网卡2|FV-T919(BCM94360CD)
 
 ### 功能测试
@@ -37,7 +37,8 @@
 ### BIOS设置
 #### ASUS-11th
 
-- only disable igpu（Otherwise, you will not be able to sleep normally）
+- disable igpu（Otherwise, you will not be able to sleep normally）
+- disable Intel Rapid Storage Technology
 
 #### ASUS-10th
 - Disabe
