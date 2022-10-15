@@ -31,7 +31,7 @@
 [❌] 核显硬件加速
 
 ### 必读项目
-- 由于本人硬盘trim开机太慢，SetApfsTrimTimeout已设置为0，请各位自行改为-1 PS(已解决
+- 硬盘trim开机慢，请关闭trim，方法：SetApfsTrimTimeout设置为0
 - 华硕usb唤醒需要去掉EFI/OC/ACPI/SSDT-GPRW,但是本人测试风扇会唤醒不停，微星貌似没问题
 - 10代的各位请把EFI-OC内的config10-egpu/igpu重命名为config食用
 - 10代+500系要遍历hdmi才可食用，tuf以及mortar已遍历完成，提取edid注入即可食用（具体请参考b站乌龙蜜桃来一打视频，简介文件也在库里哦~）
