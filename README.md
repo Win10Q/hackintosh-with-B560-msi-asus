@@ -35,7 +35,7 @@
 - 10代的各位请把EFI-OC内的config10-egpu/igpu重命名为config食用
 - 10代+500系要遍历hdmi才可食用，tuf以及mortar已遍历完成，提取edid注入即可食用（具体请参考b站乌龙蜜桃来一打视频，简介文件也在库里哦~）
 - 视频链接：https://www.bilibili.com/video/BV1UW4y1J7J2/
-
+- 遍历后的con值欢迎大家在isues的10代核显分区分享自己的con值哦~
 
 ### BIOS设置
 #### ASUS-11th
