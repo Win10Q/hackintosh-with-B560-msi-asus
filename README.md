@@ -35,7 +35,8 @@
 - 10代的各位请把EFI-OC内的config10重命名为config
 - 10代+500系要独显/定制hdmi才可食用（具体请参考b站乌龙蜜桃来一打视频-尚未制作完成）
 ### BIOS设置
-- ASUS-11th
+#### ASUS-11th
+
 - only disable igpu（Otherwise, you will not be able to sleep normally）
 - ASUS-10th
 - Disabe
