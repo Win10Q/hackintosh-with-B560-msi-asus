@@ -123,5 +123,5 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 - 中文教程：[Xjn的博客](https://blog.xjn819.com/post/opencore-guide.html)
 - 中文文档 & kexts集合下载：[OpenCore中文文档](https://oc.skk.moe/)
 - 镜像下载 & 中文教程：[黑果小兵](http://blog.daliansky.net)
-- ![73TFTW(`N3{U{O_ZJ8XDHN2](https://user-images.githubusercontent.com/99300084/201516102-366e685e-02d2-4ab6-83d2-561c8100531b.gif)
+- ![FHB2K8Q9XCW(Q`YDM1LI0OH](https://user-images.githubusercontent.com/99300084/201516133-e66e1f1d-0cc0-4dfd-adf5-96990f99b75d.gif)
 
