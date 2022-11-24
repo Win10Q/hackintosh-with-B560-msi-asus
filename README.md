@@ -1,6 +1,12 @@
 # ASUS-TUF-GAMING-B560M-PLUS-WIFI-10-11-RX6600XT-HACKINTOSH-OPENCORE
 # MSI-B560M-MORTAR-10-11-RX6600XT-HACKINTOSH-OPENCORE
 
+### 同步视频
+
+```
+https://www.bilibili.com/video/BV1Jd4y187ZS/
+```
+
 ## 硬件列表
 
 |项目|名称
