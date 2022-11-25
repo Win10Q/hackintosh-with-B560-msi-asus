@@ -1,6 +1,12 @@
 # ASUS-TUF-GAMING-B560M-PLUS-WIFI-10-11-RX6600XT-HACKINTOSH-OPENCORE
 # MSI-B560M-MORTAR-10-11-RX6600XT-HACKINTOSH-OPENCORE
 
+## 同步视频
+
+```
+https://www.bilibili.com/video/BV1Jd4y187ZS/
+```
+
 ## 硬件列表
 
 |项目|名称
@@ -12,10 +18,10 @@
 |主板3|ASUS H510-B560 均支持（igpu需遍历
 |主板4|MSI H510-B560 均支持（igpu需遍历
 |内存|corsair DDR4 3200MHz 8Gx2
-|显卡|AMD RX/intel uhd630
+|显卡|AMD RX/intel uhd630（自行重命名config
 |硬盘1|SAMSUNG 980PRO 500GB
 |硬盘2|KIOXIA RC10 250GB
-|无线网卡1|AX201/200
+|无线网卡1|AX201/200（请看驱动包）
 |无线网卡2|FV-T919(BCM94360CD)
 
 ### 功能测试
@@ -31,6 +37,7 @@
 [❌] 核显硬件加速
 
 ### 必读项目
+- 蓝牙和3.0不好使请自行定制usb
 - 硬盘trim开机慢，请关闭trim，方法：SetApfsTrimTimeout设置为0
 - 华硕usb唤醒需要去掉EFI/OC/ACPI/SSDT-GPRW,但是本人测试风扇会唤醒不停，微星貌似没问题
 - 10代的各位请把EFI-OC内的config10-egpu/igpu重命名为config食用
