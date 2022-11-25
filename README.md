@@ -108,7 +108,12 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - 开机配置主板各项配置，以及设置U盘UEFI启动顺序第一
 - 插入U盘，选择U盘UEFI启动，进行安装系统
 - 安装完成进入系统，成功!
-
+### 英特尔wifi
+- WIFI请加载驱动包对应版本驱动
+### 英特尔蓝牙
+- bigsur：IntelBluetoothFirmware.kext
+- Monterey：IntelBluetoothFirmware.kext、BlueToolFixup.kext
+- Ventura：IntelBluetoothFirmware.kext、BlueToolFixup.kext、IntelBTPatcher.kext
 ### 系统时差
 
 - Windows下管理员身份运行
