@@ -108,7 +108,22 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - 开机配置主板各项配置，以及设置U盘UEFI启动顺序第一
 - 插入U盘，选择U盘UEFI启动，进行安装系统
 - 安装完成进入系统，成功!
-
+### USB定制
+- 从仓库下载 「Windows.exe」到 Windows 平台，双击即可运行
+- 输入 D 然后回车来探测电脑上的端口
+- 进入新界面后，分别在各个 USB 接口插入 USB2.0 和 USB 3.X 的设备，每插入一次停留 5 秒钟，如果有 Type-C 设备的话，正反都要分别插入记录
+- 都挨个插一遍后，输入 B 回车即可返回主菜单
+- 回到主菜单，输入 S 来查看端口探测的结果
+- 此时结果查看感觉没问题的话，输入 K 回车，即可导出 UTBMap.kext 文件（一般情况下会保存在当前程序的同级目录下）
+- 除了上述生成的 UTBMap.kext 文件以外，我们还需要配合 USBToolBox.kext 使用（仓库）
+- 将上述两个 Kext 放到 OC 的 Kexts 文件夹下面并加载，去除usbport.kext
+- 重启即可生效，至此你的 USB 基本上定制完了，尽情使用吧
+### 英特尔wifi
+- WIFI请加载驱动包对应版本驱动
+### 英特尔蓝牙
+- bigsur：IntelBluetoothFirmware.kext
+- Monterey：IntelBluetoothFirmware.kext、BlueToolFixup.kext
+- Ventura：IntelBluetoothFirmware.kext、BlueToolFixup.kext、IntelBTPatcher.kext
 ### 系统时差
 
 - Windows下管理员身份运行
