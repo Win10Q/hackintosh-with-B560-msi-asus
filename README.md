@@ -17,10 +17,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 |主板2|MSI MORTAR B560M
 |主板3|ASUS H510-B560 均支持（igpu需遍历
 |主板4|MSI H510-B560 均支持（igpu需遍历
-|内存|corsair DDR4 3200MHz 8Gx2
 |显卡|AMD RX/intel uhd630（自行重命名config
-|硬盘1|SAMSUNG 980PRO 500GB
-|硬盘2|KIOXIA RC10 250GB
 |无线网卡1|AX201/200（请看驱动包）
 |无线网卡2|FV-T919(BCM94360CD)
 
