@@ -37,8 +37,6 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 [❌] 核显硬件加速
 
 ### 必读项目
-- 蓝牙和3.0不好使请自行定制usb
-- 硬盘trim开机慢，请关闭trim，方法：SetApfsTrimTimeout设置为0
 - 华硕usb唤醒需要去掉EFI/OC/ACPI/SSDT-GPRW,但是本人测试风扇会唤醒不停，微星貌似没问题
 - 10代的各位请把EFI-OC内的config10-egpu/igpu重命名为config食用
 - 10代+500系要遍历hdmi才可食用，tuf以及mortar已遍历完成，提取edid注入即可食用（具体请参考b站乌龙蜜桃来一打视频，简介文件也在库里哦~）
@@ -124,6 +122,9 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - bigsur：IntelBluetoothFirmware.kext
 - Monterey：IntelBluetoothFirmware.kext、BlueToolFixup.kext
 - Ventura：IntelBluetoothFirmware.kext、BlueToolFixup.kext、IntelBTPatcher.kext
+### 开机优化
+- 三星硬盘trim会导致开机慢
+- 解决方法：SetApfsTrimTimeout设置为0
 ### 系统时差
 
 - Windows下管理员身份运行
