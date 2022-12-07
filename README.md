@@ -136,6 +136,10 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 - 也有看到说在 `设置`-`启动磁盘` 可选择默认启动项,修改后重启
 
+### 更新oc
+
+- 这方面教程太多了就不赘述了，有能力的自己上b站搜“ocat升级opencore“
+
 ### 鸣谢
 - https://github.com/OrangJuc/
 - 橙汁大佬提供ssdt的修改
