@@ -108,7 +108,24 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - 开机配置主板各项配置，以及设置U盘UEFI启动顺序第一
 - 插入U盘，选择U盘UEFI启动，进行安装系统
 - 安装完成进入系统，成功!
-- 最后将`EFI`复制粘贴到`ESP分区`即可
+### U盘引导修改为硬盘引导
+#### 修改准备
+- `DiskGenius`（为什么不用EasyUEFI？因为这EasyUEFI会导致BIOS咕咕咕咕咕咕咕咕，所以不用）
+- `EFI文件`
+#### 修改开始
+- 重启到`WIndows`或者`WinPe`都可以
+- 打开`DiskGenius`
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-1.png)
+- 找到你u盘的`ESP`分区并把`EFI`复制到桌面即可
+- 然后找到你的`硬盘` `ESP`分区（注意是这里要是`WINDOWS的ESP`）
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-2.png)
+- 点开`EFI`文件夹把刚才拷贝到的桌面的`EFI`里面的`OC`文件夹丢到`EFI`里面
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-3.png)
+- 然后点击顶部菜单栏的`工具`-`设置` `UEFIBIOS`启动项
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-4.png)
+- 添加一个启动项，把路径指向`ESP-EFI-OC-OpenCore.efi`即可
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-5.png)
+- 把这个启动项修改一下名字上移到第一位`保存`即可
 ### 英特尔wifi
 - WIFI请加载驱动包对应版本驱动
 ### 英特尔蓝牙
