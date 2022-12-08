@@ -106,18 +106,18 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - 安装完成进入系统，成功!
 ### USB定制
 - 从仓库下载 「Windows.exe」到 Windows 平台，双击即可运行
-- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
 - 输入 D 然后回车来探测电脑上的端口
-- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-2.png)
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-2.png)
 - 分别在各个 USB 接口插入 USB2.0 和 USB 3.X 的设备，每插入一次停留 5 秒钟，如果有 Type-C 设备的话，正反都要分别插入记录
 - 都挨个插一遍后，输入 B 回车即可返回主菜单
-- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-3.png)
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-3.png)
 - 回到主菜单，输入 S 来查看端口探测的结果
 - 此时结果查看感觉没问题的话，输入 K 回车，即可导出 UTBMap.kext 文件（一般情况下会保存在当前程序的同级目录下）
-- ![image](https://user-images.githubusercontent.com/99300084/206326768-84ef300a-e64e-4978-9e30-9c955d537a28.png)
+  ![image](https://user-images.githubusercontent.com/99300084/206326768-84ef300a-e64e-4978-9e30-9c955d537a28.png)
 - 除了上述生成的 UTBMap.kext 文件以外，我们还需要配合 USBToolBox.kext 使用（仓库）
 - 将上述两个 Kext 放到 OC 的 Kexts 文件夹下面并加载，去除usbport.kext
-- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-5.png)
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-5.png)
 - 重启即可生效，至此你的 USB 基本上定制完了，尽情使用吧
 ### 英特尔wifi
 - WIFI请加载驱动包对应版本驱动
@@ -128,7 +128,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 ### 开机优化
 - 三星硬盘trim会导致开机慢
 - 解决方法：SetApfsTrimTimeout设置为0
-- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E7%A1%AC%E7%9B%98-1.png)
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E7%A1%AC%E7%9B%98-1.png)
 ### 系统时差
 
 - Windows下管理员身份运行
@@ -147,13 +147,13 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 - 下载最新版本OCAT(https://github.com/ic005k/OCAuxiliaryTools/releases)
 - 挂载你的efi分区（也叫esp分区）
-- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-1.jpg)
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-1.jpg)
 - 挂载后先不要着急打开，先把ocat（即OCAuxiliaryTools）同步一下再打开
-- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-2.jpg)
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-2.jpg)
 - 然后再打开Config.plist。首先点击全选，然后检查kext更新，更新kext，后点击选择opencore版本，选择最新版，获取opencore，后点击同步保存即可
-- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-3.jpg)
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-3.jpg)
 - 保存重启即可
-- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-4.jpg)
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-4.jpg)
 ### 鸣谢
 - https://github.com/OrangJuc/
 - 橙汁大佬提供ssdt的修改
