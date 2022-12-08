@@ -6,7 +6,8 @@
 ```
 https://www.bilibili.com/video/BV1Jd4y187ZS/
 ```
-
+## 关于本机
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%9C%BA.png)
 ## 硬件列表
 
 |项目|名称
@@ -36,9 +37,9 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 ### 必读项目
 - 华硕usb唤醒需要去掉EFI/OC/ACPI/SSDT-GPRW,但是本人测试风扇会唤醒不停，微星貌似没问题
 - 10代的各位请把EFI-OC内的config10-egpu/igpu重命名为config食用
-- 10代+500系要遍历hdmi才可食用，tuf以及mortar已遍历完成，提取edid注入即可食用（具体请参考b站乌龙蜜桃来一打视频，简介文件也在库里哦~）
+- 10代+500系要定制hdmi才可食用，tuf以及mortar已遍历完成，提取edid注入即可食用（具体请参考b站乌龙蜜桃来一打视频，简介文件也在库里哦~）
 - 视频链接：https://www.bilibili.com/video/BV1UW4y1J7J2/
-- 遍历后的con值欢迎大家在isues的10代核显分区分享自己的con值哦~
+- 遍历后的con欢迎大家在isues的10代核显分区分享自己的con值哦~
 
 ### BIOS设置
 #### ASUS-11th
@@ -105,13 +106,18 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - 安装完成进入系统，成功!
 ### USB定制
 - 从仓库下载 「Windows.exe」到 Windows 平台，双击即可运行
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
 - 输入 D 然后回车来探测电脑上的端口
-- 进入新界面后，分别在各个 USB 接口插入 USB2.0 和 USB 3.X 的设备，每插入一次停留 5 秒钟，如果有 Type-C 设备的话，正反都要分别插入记录
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-2.png)
+- 分别在各个 USB 接口插入 USB2.0 和 USB 3.X 的设备，每插入一次停留 5 秒钟，如果有 Type-C 设备的话，正反都要分别插入记录
 - 都挨个插一遍后，输入 B 回车即可返回主菜单
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-3.png)
 - 回到主菜单，输入 S 来查看端口探测的结果
 - 此时结果查看感觉没问题的话，输入 K 回车，即可导出 UTBMap.kext 文件（一般情况下会保存在当前程序的同级目录下）
+- ![image](https://user-images.githubusercontent.com/99300084/206326768-84ef300a-e64e-4978-9e30-9c955d537a28.png)
 - 除了上述生成的 UTBMap.kext 文件以外，我们还需要配合 USBToolBox.kext 使用（仓库）
 - 将上述两个 Kext 放到 OC 的 Kexts 文件夹下面并加载，去除usbport.kext
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-5.png)
 - 重启即可生效，至此你的 USB 基本上定制完了，尽情使用吧
 ### 英特尔wifi
 - WIFI请加载驱动包对应版本驱动
