@@ -9,7 +9,6 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 ## 关于本机
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%9C%BA.png)
 ## 硬件列表
-
 |项目|名称
 |-|-
 |CPU0|Intel 10th CORE all
@@ -21,9 +20,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 |显卡|AMD RX/intel uhd630（自行重命名config
 |无线网卡1|AX201/200（请看驱动包）
 |无线网卡2|FV-T919(BCM94360CD)
-
 ### 功能测试
-
 - [x] 板载声卡
 - [x] 板载网卡
 - [x] 睡眠唤醒
@@ -33,20 +30,17 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - [x] 板载蓝牙
 
 [❌] 核显硬件加速
-
 ### 必读项目
-- 华硕usb唤醒需要去掉EFI/OC/ACPI/SSDT-GPRW,但是本人测试风扇会唤醒不停，微星貌似没问题
-- 10代的各位请把EFI-OC内的config10-egpu/igpu重命名为config食用
+- 华硕usb唤醒需要去掉`EFI/OC/ACPI/SSDT-GPRW`,但是本人测试风扇会唤醒不停，微星貌似没问题
+- 10代的各位请把`EFI-OC`内的`config10-egpu/igpu`重命名为`config`食用
 - 10代+500系要定制hdmi才可食用，tuf以及mortar已遍历完成，提取edid注入即可食用（具体请参考b站乌龙蜜桃来一打视频，简介文件也在库里哦~）
 - 视频链接：https://www.bilibili.com/video/BV1UW4y1J7J2/
 - 遍历后的con欢迎大家在isues的10代核显分区分享自己的con值哦~
-
 ### BIOS设置
 #### ASUS-11th
-
 - disable igpu（Otherwise, you will not be able to sleep normally）
 - disable Intel Rapid Storage Technology
-
+最后需要按键盘上的`F10`键保存退出即可.
 #### ASUS-10th
 - Disabe
 - Fast Boot
@@ -61,9 +55,8 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - EHCI/XHCI Hand-off
 - OS type: Windows UEFI Mode (Clear Secure Boot Keys or choose `Other` type)
 - DVMT Pre-Allocated(iGPU Memory): 64MB
-
+最后需要按键盘上的`F10`键保存退出即可.
 #### MSI-10th
-
 - Boot -- Fast Boot -> Disabled
 - Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
 - Boot -- CSM(Compatibility Support Module) -> Disabled
@@ -78,10 +71,8 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - Advanced -- APM Configuration -- ErP Ready -> Disabled
 - Advanced -- Network Stack Configuration -- Network Stack -> Disabled
 - Boot -- Secure Boot -- OS Type -- Other OS
-最后需要 按键盘上的 F10 键保存退出即可.
-
+最后需要按键盘上的`F10`键保存退出即可.
 #### MSI-11th
-
 - Boot -- Fast Boot -> Disabled
 - Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
 - Boot -- CSM(Compatibility Support Module) -> Disabled
@@ -96,14 +87,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - Advanced -- APM Configuration -- ErP Ready -> Disabled
 - Advanced -- Network Stack Configuration -- Network Stack -> Disabled
 - Boot -- Secure Boot -- OS Type -- Other OS
-最后需要 按键盘上的 F10 键保存退出即可.
-### 安装过程
-- 准备安装U盘：参考OC官方配置，十分好用：[USB Creation](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install.html#setting-up-opencore-s-efi-environment)，包含macOS、Windows、Linux的U盘制作。
-- (重要)使用OpenCoreConfigurator打开我提供的EFI的OC/config.plist 重新生成SystemSerialNumber/SystemUUID/MLB
-- 将当前提供的EFI放入U盘EFI磁盘目录下，表示使用当前EFI进行引导
-- 开机配置主板各项配置，以及设置U盘UEFI启动顺序第一
-- 插入U盘，选择U盘UEFI启动，进行安装系统
-- 安装完成进入系统，成功!
+最后需要按键盘上的`F10`键保存退出即可.
 ### USB定制
 - 从仓库下载 「Windows.exe」到 Windows 平台，双击即可运行
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
@@ -119,6 +103,14 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - 将上述两个 Kext 放到 OC 的 Kexts 文件夹下面并加载，去除usbport.kext
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-5.png)
 - 重启即可生效，至此你的 USB 基本上定制完了，尽情使用吧
+### 安装过程
+- 准备安装U盘：参考OC官方配置，十分好用：[USB Creation](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install.html#setting-up-opencore-s-efi-environment)，包含macOS、Windows、Linux的U盘制作。
+- (重要)使用`OpenCoreConfigurator`打开我提供的EFI的`OC/config.plist` 重新生成`SystemSerialNumber/SystemUUID/MLB`
+- 将当前提供的EFI放入U盘EFI磁盘目录下，表示使用当前EFI进行引导
+- 开机配置主板各项配置，以及设置U盘UEFI启动顺序第一
+- 插入U盘，选择U盘UEFI启动，进行安装系统
+- 安装完成进入系统，成功!
+- 最后将`EFI`复制粘贴到`ESP分区`即可
 ### 英特尔wifi
 - WIFI请加载驱动包对应版本驱动
 ### 英特尔蓝牙
@@ -138,13 +130,9 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 ```
 
 ### 设置默认启动项
-
 - `config.plist`勾上仿冒苹果快捷键`PollAppleHotKey`，在启动选择界面，先选中要启动的项，然后按键盘的 `Ctrl` + `Enter` 进入系统即可
-
 - 也有看到说在 `设置`-`启动磁盘` 可选择默认启动项,修改后重启
-
 ### 更新oc
-
 - 下载最新版本OCAT(https://github.com/ic005k/OCAuxiliaryTools/releases)
 - 挂载你的efi分区（也叫esp分区）
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-1.jpg)
