@@ -128,6 +128,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 ### 开机优化
 - 三星硬盘trim会导致开机慢
 - 解决方法：SetApfsTrimTimeout设置为0
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E7%A1%AC%E7%9B%98-1.png)
 ### 系统时差
 
 - Windows下管理员身份运行
