@@ -122,12 +122,12 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 ### 英特尔wifi
 - WIFI请加载驱动包对应版本驱动
 ### 英特尔蓝牙
-- bigsur：IntelBluetoothFirmware.kext
-- Monterey：IntelBluetoothFirmware.kext、BlueToolFixup.kext
-- Ventura：IntelBluetoothFirmware.kext、BlueToolFixup.kext、IntelBTPatcher.kext
+- bigsur：`IntelBluetoothFirmware.kext`
+- Monterey：`IntelBluetoothFirmware.kext` `BlueToolFixup.kext`
+- Ventura：`IntelBluetoothFirmware.kext` `BlueToolFixup.kext` `IntelBTPatcher.kext`
 ### 开机优化
 - 三星硬盘trim会导致开机慢
-- 解决方法：SetApfsTrimTimeout设置为0
+- 解决方法：`SetApfsTrimTimeout`设置为`0`
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E7%A1%AC%E7%9B%98-1.png)
 ### 系统时差
 
