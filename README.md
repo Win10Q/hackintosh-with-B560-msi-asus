@@ -91,15 +91,15 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 ### USB定制
 - 从仓库下载 「Windows.exe」到 Windows 平台，双击即可运行
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
-- 输入 D 然后回车来探测电脑上的端口
+- 输入` D `然后回车来探测电脑上的端口
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-2.png)
-- 分别在各个 USB 接口插入 USB2.0 和 USB 3.X 的设备，每插入一次停留 5 秒钟，如果有 Type-C 设备的话，正反都要分别插入记录
-- 都挨个插一遍后，输入 B 回车即可返回主菜单
+- 分别在各个 USB 接口插入` USB2.0 `和` USB 3.X `的设备，每插入一次停留` 5 秒钟`，如果有` Type-C `设备的话，正反都要分别插入记录
+- 都挨个插一遍后，输入` B` 回车即可返回主菜单
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-3.png)
-- 回到主菜单，输入 S 来查看端口探测的结果
-- 此时结果查看感觉没问题的话，输入 K 回车，即可导出 UTBMap.kext 文件（一般情况下会保存在当前程序的同级目录下）
+- 回到主菜单，输入` S `来查看端口探测的结果
+- 此时结果查看感觉没问题的话，输入` K `回车，即可导出`UTBMap.kext`文件（一般情况下会保存在当前程序的同级目录下）
   ![image](https://user-images.githubusercontent.com/99300084/206326768-84ef300a-e64e-4978-9e30-9c955d537a28.png)
-- 除了上述生成的 UTBMap.kext 文件以外，我们还需要配合 USBToolBox.kext 使用（仓库）
+- 除了上述生成的`UTBMap.kext`文件以外，我们还需要配合`USBToolBox.kext`使用（仓库）
 - 将上述两个 Kext 放到 OC 的 Kexts 文件夹下面并加载，去除usbport.kext
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-5.png)
 - 重启即可生效，至此你的 USB 基本上定制完了，尽情使用吧
@@ -118,7 +118,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - Monterey：`IntelBluetoothFirmware.kext` `BlueToolFixup.kext`
 - Ventura：`IntelBluetoothFirmware.kext` `BlueToolFixup.kext` `IntelBTPatcher.kext`
 ### 开机优化
-- 三星硬盘trim会导致开机慢
+- 三星硬盘`trim`会导致开机慢
 - 解决方法：`SetApfsTrimTimeout`设置为`0`
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E7%A1%AC%E7%9B%98-1.png)
 ### 系统时差
