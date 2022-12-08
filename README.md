@@ -159,7 +159,7 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-4.jpg)
 ### 鸣谢
 - https://github.com/OrangJuc/
-- 橙汁大佬提供ssdt的修改
+- 橙汁大佬提供SSDT的修改
 - 最好的入门教程：[OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - 中文教程：[Xjn的博客](https://blog.xjn819.com/post/opencore-guide.html)
 - 中文文档 & kexts集合下载：[OpenCore中文文档](https://oc.skk.moe/)
