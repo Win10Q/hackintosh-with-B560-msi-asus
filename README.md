@@ -33,9 +33,9 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 ### 必读项目
 - 华硕usb唤醒需要去掉`EFI/OC/ACPI/SSDT-GPRW`,但是本人测试风扇会唤醒不停，微星貌似没问题
 - 10代的各位请把`EFI-OC`内的`config10-egpu/igpu`重命名为`config`食用
-- 10代+500系要定制hdmi才可食用，tuf以及mortar已遍历完成，提取edid注入即可食用（具体请参考b站乌龙蜜桃来一打视频，简介文件也在库里哦~）
+- 10代+500系要`定制hdmi`才可食用，`tuf`以及`mortar`已遍历完成，提取`edid`注入即可食用（具体请参考b站乌龙蜜桃来一打视频，简介文件也在库里哦~）
 - 视频链接：https://www.bilibili.com/video/BV1UW4y1J7J2/
-- 遍历后的con欢迎大家在isues的10代核显分区分享自己的con值哦~
+- 遍历后的`con`欢迎大家在`isues`的10代核显分区分享自己的`con`值哦~
 ### BIOS设置
 #### ASUS-11th
 - disable igpu（Otherwise, you will not be able to sleep normally）
