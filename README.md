@@ -145,8 +145,15 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 
 ### 更新oc
 
-- 这方面教程太多了就不赘述了，有能力的自己上b站搜“ocat升级opencore“
-
+- 下载最新版本OCAT(https://github.com/ic005k/OCAuxiliaryTools/releases)
+- 挂载你的efi分区（也叫esp分区）
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-1.jpg)
+- 挂载后先不要着急打开，先把ocat（即OCAuxiliaryTools）同步一下再打开
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-2.jpg)
+- 然后再打开Config.plist。首先点击全选，然后检查kext更新，更新kext，后点击选择opencore版本，选择最新版，获取opencore，后点击同步保存即可
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-3.jpg)
+- 保存重启即可
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-4.jpg)
 ### 鸣谢
 - https://github.com/OrangJuc/
 - 橙汁大佬提供ssdt的修改
