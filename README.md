@@ -160,6 +160,8 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 ### 鸣谢
 - https://github.com/OrangJuc/
 - 橙汁大佬提供SSDT的修改
+- 定制usb转自国光大佬
+- 拷贝esp与更新oc转自LoonGasCoom（https://www.jzchen.top/）
 - 最好的入门教程：[OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
 - 中文教程：[Xjn的博客](https://blog.xjn819.com/post/opencore-guide.html)
 - 中文文档 & kexts集合下载：[OpenCore中文文档](https://oc.skk.moe/)
