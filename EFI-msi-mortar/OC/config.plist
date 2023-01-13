@@ -165,14 +165,8 @@
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
                 <dict>
-                    <key>AAPL,slot-name</key>
-                    <string>Internal@0,31,3</string>
-                    <key>alc-layout-id</key>
-                    <data>RQAAAA==</data>
-                    <key>device_type</key>
-                    <string>Audio device</string>
-                    <key>model</key>
-                    <string>Tiger Lake-H HD Audio Controller</string>
+                    <key>layout-id</key>
+                    <integer>66</integer>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -490,7 +484,7 @@
                 <key>HibernateSkipsPicker</key>
                 <false/>
                 <key>HideAuxiliary</key>
-                <false/>
+                <true/>
                 <key>LauncherOption</key>
                 <string>Full</string>
                 <key>LauncherPath</key>
@@ -510,7 +504,7 @@
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
-                <integer>3</integer>
+                <integer>15</integer>
             </dict>
             <key>Debug</key>
             <dict>
@@ -634,11 +628,11 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>agdpmod=pikera alcid=69</string>
+                    <string>agdpmod=pikera keepsms=1</string>
                     <key>csr-active-config</key>
-                    <data>ZwAAAA==</data>
+                    <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
-                    <data>AAAKAA==</data>
+                    <string>zh-Hans:252</string>
                     <key>run-efi-updater</key>
                     <string>No</string>
                 </dict>
@@ -703,13 +697,13 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>114514</string>
+                <string></string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
-                <integer>3842</integer>
+                <integer>0</integer>
                 <key>ROM</key>
-                <data>ESIzRFVm</data>
+                <data></data>
                 <key>SpoofVendor</key>
                 <true/>
                 <key>SystemMemoryStatus</key>
@@ -717,9 +711,9 @@
                 <key>SystemProductName</key>
                 <string>MacPro7,1</string>
                 <key>SystemSerialNumber</key>
-                <string>114514</string>
+                <string></string>
                 <key>SystemUUID</key>
-                <string>114514</string>
+                <string></string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
