@@ -155,10 +155,13 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-2.jpg)
 - 然后再打开`Config.plist`。首先点击全选，然后`检查kext`更新，更新`kext`，后点击选择`opencore版本`，选择`最新版`，`获取opencore`，后点击`同步` `保存`即可
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-3.jpg)
-- 保存重启即可
-  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-4.jpg)
+### 生成三码
+- 同步完不必急着关闭`OCAT`，切换到`PL`选项卡
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E4%B8%89%E7%A0%81-1.png)
+- 首先点击`生成`生成`三码`，然后点击`生成`生成`rom`
+- `保存``重启`即可
+- ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-4.jpg)
 ### 鸣谢
-
 - 橙汁大佬提供SSDT的修改：[Github-orangjuc](https://github.com/OrangJuc/)
 - 定制usb转自国光大佬：[国光黑苹果blog](https://apple.sqlsec.com/)
 - 拷贝esp与更新oc转自LoonGasCoom：[LoonGasCoom](https://www.jzchen.top/)
