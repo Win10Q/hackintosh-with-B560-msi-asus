@@ -13,8 +13,8 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 |CPU1|Intel 11th CORE all
 |主板1|ASUS TUF GAMING B560M PLUS WIFI
 |主板2|MSI MORTAR B560M
-|主板3|ASUS H510-B560 均支持（igpu需遍历
-|主板4|MSI H510-B560 均支持（igpu需遍历
+|主板3|ASUS H510-Z590 均支持（igpu已遍历
+|主板4|MSI H510-Z590 均支持（igpu已遍历
 |显卡|AMD RX/intel uhd630（自行重命名config
 |无线网卡1|AX201/200（请看驱动包）
 |无线网卡2|FV-T919(BCM94360CD)
@@ -26,14 +26,9 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - [x] 所有USB端口
 - [x] 接力和隔空投送
 - [x] 板载蓝牙
-
-[❌] 核显硬件加速
 ### 必读项目
-- 华硕usb唤醒需要去掉`EFI/OC/ACPI/SSDT-GPRW`,但是本人测试风扇会唤醒不停，微星貌似没问题
 - 10代的各位请把`EFI-OC`内的`config10-egpu/igpu`重命名为`config`食用
-- 10代+500系要`定制hdmi`才可食用，`tuf`以及`mortar`已遍历完成，提取`edid`注入即可食用（具体请参考b站乌龙蜜桃来一打视频，简介文件也在库里哦~）
-- 视频链接：https://www.bilibili.com/video/BV1UW4y1J7J2/
-- 遍历后的`con`欢迎大家在`isues`的10代核显分区分享自己的`con`值哦~
+- 10代+500系要`定制hdmi`才可食用，核显参数完成，提取`edid`注入即可食用（具体请参考b站乌龙蜜桃来一打视频[视频](https://www.bilibili.com/video/BV1UW4y1J7J2/)，简介文件也在库里哦~）
 ### BIOS设置
 #### ASUS-11th
 - disable igpu（Otherwise, you will not be able to sleep normally）
