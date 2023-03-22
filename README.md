@@ -107,6 +107,12 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - 初始化igpu `Enabled`
 - dvtm分配 `64mb`
 - RC6（渲染备用）`关闭`
+
+#### MSI-10代单核显设置
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%BE%AE%E6%98%9F%E6%A0%B8%E6%98%BE.jpg)
+- Settings\Advanced\Integrated Graphics Configuration\Initiate Graphic Adapter `PEG`
+- Settings\Advanced\Integrated Graphics Configuration\Integrated Graphics Share Memory `64MB`
+- Settings\Advanced\Integrated Graphics Configuration\IGD Multi - Monitor `Enabled`
 ### USB定制
 - 从仓库下载 「Windows.exe」到 Windows 平台，双击即可运行
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
