@@ -175,7 +175,7 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 - `config.plist`勾上仿冒苹果快捷键`PollAppleHotKey`，在启动选择界面，先选中要启动的项，然后按键盘的 `Ctrl` + `Enter` 进入系统即可
 - 也有看到说在 `设置`-`启动磁盘` 可选择默认启动项,修改后重启
 ### 更新oc
-- 下载最新版本`OCAT`(https://github.com/ic005k/OCAuxiliaryTools/releases)
+- 下载最新版本[OCAT](https://github.com/ic005k/OCAuxiliaryTools/releases)
 - 挂载你的`efi`分区（也叫`esp`分区）
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-1.jpg)
 - 挂载后先不要着急打开，先把`OCAT`（即`OCAuxiliaryTools`）同步一下再打开
