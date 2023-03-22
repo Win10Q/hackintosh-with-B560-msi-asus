@@ -37,7 +37,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 <summary>展开查看</summary>
 <pre><code>
 - disable Intel Rapid Storage Technology
-最后需要按键盘上的`F10`键保存退出即可.
+最后需要按键盘上的 F10 键保存退出即可.
 </code></pre>
 </details>
 
@@ -51,9 +51,9 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - CSM
 - Enable
 - Above 4G decoding
-- OS type: Windows UEFI Mode (Clear Secure Boot Keys or choose `Other` type)
+- OS type: Windows UEFI Mode (Clear Secure Boot Keys or choose Other type)
 - DVMT Pre-Allocated(iGPU Memory): 64MB
-最后需要按键盘上的`F10`键保存退出即可.
+最后需要按键盘上的 F10 键保存退出即可.
 </code></pre>
 </details>
 
@@ -75,7 +75,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - Advanced -- APM Configuration -- ErP Ready -> Disabled
 - Advanced -- Network Stack Configuration -- Network Stack -> Disabled
 - Boot -- Secure Boot -- OS Type -- Other OS
-最后需要按键盘上的`F10`键保存退出即可.
+最后需要按键盘上的 F10 键保存退出即可.
 </code></pre>
 </details>
 
@@ -97,10 +97,16 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - Advanced -- APM Configuration -- ErP Ready -> Disabled
 - Advanced -- Network Stack Configuration -- Network Stack -> Disabled
 - Boot -- Secure Boot -- OS Type -- Other OS
-最后需要按键盘上的`F10`键保存退出即可.
+最后需要按键盘上的 F10 键保存退出即可.
 </code></pre>
 </details>
 
+#### ASUS-10代单核显设置
+  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%8D%8E%E7%A1%95%E6%A0%B8%E6%98%BE.jpg)
+- 首选显卡 `处理器显示单元`
+- 初始化igpu `Enabled`
+- dvtm分配 `64mb`
+- RC6（渲染备用）`关闭`
 ### USB定制
 - 从仓库下载 「Windows.exe」到 Windows 平台，双击即可运行
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
