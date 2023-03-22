@@ -28,10 +28,9 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - [x] 板载蓝牙
 ### 必读项目
 - 10代的各位请把`EFI-OC`内的`config10-egpu/igpu`重命名为`config`食用
-- 10代+500系要`定制hdmi`才可食用，核显参数完成，提取`edid`注入即可食用（具体请参考b站乌龙蜜桃来一打视频[视频](https://www.bilibili.com/video/BV1UW4y1J7J2/)，简介文件也在库里哦~）
+- 10代+500系要`定制hdmi`才可食用，核显参数完成，提取`edid`注入即可食用（具体请参考b站乌龙蜜桃来一打の[视频](https://www.bilibili.com/video/BV1UW4y1J7J2/)，简介文件也在库里哦~）
 ### BIOS设置
 #### ASUS-11th
-- disable igpu（Otherwise, you will not be able to sleep normally）
 - disable Intel Rapid Storage Technology
 最后需要按键盘上的`F10`键保存退出即可.
 #### ASUS-10th
@@ -39,13 +38,8 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - Fast Boot
 - VT-d
 - CSM
-- Intel SGX
-- CFG Lock
 - Enable
-- VT-x (no option in BIOS, it's enabled by default)
 - Above 4G decoding
-- Hyper-Threading
-- EHCI/XHCI Hand-off
 - OS type: Windows UEFI Mode (Clear Secure Boot Keys or choose `Other` type)
 - DVMT Pre-Allocated(iGPU Memory): 64MB
 最后需要按键盘上的`F10`键保存退出即可.
