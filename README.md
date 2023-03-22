@@ -13,8 +13,8 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 |CPU1|Intel 11th CORE all
 |主板1|ASUS TUF GAMING B560M PLUS WIFI
 |主板2|MSI MORTAR B560M
-|主板3|ASUS H510-B560 均支持（igpu需遍历
-|主板4|MSI H510-B560 均支持（igpu需遍历
+|主板3|ASUS H510-Z590 均支持（igpu已遍历
+|主板4|MSI H510-Z590 均支持（igpu已遍历
 |显卡|AMD RX/intel uhd630（自行重命名config
 |无线网卡1|AX201/200（请看驱动包）
 |无线网卡2|FV-T919(BCM94360CD)
@@ -26,35 +26,63 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - [x] 所有USB端口
 - [x] 接力和隔空投送
 - [x] 板载蓝牙
-
-[❌] 核显硬件加速
 ### 必读项目
-- 华硕usb唤醒需要去掉`EFI/OC/ACPI/SSDT-GPRW`,但是本人测试风扇会唤醒不停，微星貌似没问题
-- 10代的各位请把`EFI-OC`内的`config10-egpu/igpu`重命名为`config`食用
-- 10代+500系要`定制hdmi`才可食用，`tuf`以及`mortar`已遍历完成，提取`edid`注入即可食用（具体请参考b站乌龙蜜桃来一打视频，简介文件也在库里哦~）
-- 视频链接：https://www.bilibili.com/video/BV1UW4y1J7J2/
-- 遍历后的`con`欢迎大家在`isues`的10代核显分区分享自己的`con`值哦~
+- 10代核显的各位请把`EFI-OC`内的`config10-igpu`重命名为`config`食用
+- 10代独显的各位请把`EFI-OC`内的`config10-egpu`重命名为`config`食用
+- 11代独显的各位请把`EFI-OC`内的`config11`重命名为`config`食用
+- 10代+500系要`定制hdmi`才可食用，核显参数完成，提取`edid`注入即可食用（具体请参考b站乌龙蜜桃来一打の[视频](https://www.bilibili.com/video/BV1UW4y1J7J2/)，简介文件也在库里哦~）
 ### BIOS设置
 #### ASUS-11th
-- disable igpu（Otherwise, you will not be able to sleep normally）
+<details>
+<summary>展开查看</summary>
+<pre><code>
 - disable Intel Rapid Storage Technology
 最后需要按键盘上的`F10`键保存退出即可.
-#### ASUS-10th
+</code></pre>
+</details>
+
+#### ASUS-10th-egpu
+<details>
+<summary>展开查看</summary>
+<pre><code>
 - Disabe
 - Fast Boot
 - VT-d
 - CSM
-- Intel SGX
-- CFG Lock
 - Enable
-- VT-x (no option in BIOS, it's enabled by default)
 - Above 4G decoding
-- Hyper-Threading
-- EHCI/XHCI Hand-off
 - OS type: Windows UEFI Mode (Clear Secure Boot Keys or choose `Other` type)
 - DVMT Pre-Allocated(iGPU Memory): 64MB
 最后需要按键盘上的`F10`键保存退出即可.
-#### MSI-10th
+</code></pre>
+</details>
+
+#### MSI-11th
+<details>
+<summary>展开查看</summary>
+<pre><code>
+- Boot -- Fast Boot -> Disabled
+- Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
+- Boot -- CSM(Compatibility Support Module) -> Disabled
+- Ai Tweaker -- Ai Overclock Tuner -> XMP
+- Advanced -- CPU configuration -- Intel Virtualization Technology -> Disabled
+- Advanced -- System Agent (SA) Configuration -- VT-D -> Disabled
+- Advanced -- System Agent (SA) Configuration -- Above 4G Decoding -> Disabled
+- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- Primary Display -> GPU Graphics
+- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- iGPU Multi-Monitor -> Disabled
+- Advanced -- PCH configruation - IOAPIC 24-119 Entries -> Enabled
+- Advanced -- PCH-FW Configuration -- TPM Device Selection -> Discrete TPM
+- Advanced -- APM Configuration -- ErP Ready -> Disabled
+- Advanced -- Network Stack Configuration -- Network Stack -> Disabled
+- Boot -- Secure Boot -- OS Type -- Other OS
+最后需要按键盘上的`F10`键保存退出即可.
+</code></pre>
+</details>
+
+#### MSI-10th-egpu
+<details>
+<summary>展开查看</summary>
+<pre><code>
 - Boot -- Fast Boot -> Disabled
 - Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
 - Boot -- CSM(Compatibility Support Module) -> Disabled
@@ -70,22 +98,9 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - Advanced -- Network Stack Configuration -- Network Stack -> Disabled
 - Boot -- Secure Boot -- OS Type -- Other OS
 最后需要按键盘上的`F10`键保存退出即可.
-#### MSI-11th
-- Boot -- Fast Boot -> Disabled
-- Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
-- Boot -- CSM(Compatibility Support Module) -> Disabled
-- Ai Tweaker -- Ai Overclock Tuner -> XMP
-- Advanced -- CPU configuration -- Intel Virtualization Technology -> Disabled
-- Advanced -- System Agent (SA) Configuration -- VT-D -> Disabled
-- Advanced -- System Agent (SA) Configuration -- Above 4G Decoding -> Disabled
-- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- Primary Display -> PCIE 独立显卡配置 1
-- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- iGPU Multi-Monitor -> Enabled 独立显卡配置 2
-- Advanced -- PCH configruation - IOAPIC 24-119 Entries -> Enabled
-- Advanced -- PCH-FW Configuration -- TPM Device Selection -> Discrete TPM
-- Advanced -- APM Configuration -- ErP Ready -> Disabled
-- Advanced -- Network Stack Configuration -- Network Stack -> Disabled
-- Boot -- Secure Boot -- OS Type -- Other OS
-最后需要按键盘上的`F10`键保存退出即可.
+</code></pre>
+</details>
+
 ### USB定制
 - 从仓库下载 「Windows.exe」到 Windows 平台，双击即可运行
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
