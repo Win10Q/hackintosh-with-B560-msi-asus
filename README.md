@@ -1,4 +1,5 @@
 # ASUS-MSI-10-11-HACKINTOSH-OPENCORE
+## 支持macOS Sonoma
 ## 同步视频
 
 ```
@@ -16,7 +17,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 |主板3|ASUS H510-Z590 均支持（igpu已遍历
 |主板4|MSI H510-Z590 均支持（igpu已遍历
 |显卡|AMD RX/intel uhd630（自行重命名config
-|无线网卡1|AX201/200（请看驱动包）
+|无线网卡1|AX201/200（详见最新Release与Readme）
 |无线网卡2|FV-T919(BCM94360CD)
 ### 功能测试
 - [x] 板载声卡
@@ -27,6 +28,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - [x] 接力和隔空投送
 - [x] 板载蓝牙
 ### 必读项目
+- macOS Sonoma截止到20230715仍不支持博通网卡，请换用英特尔卡。WiFi驱动详见[zxystd](https://github.com/zxystd/)的itlwm。最新Release已提供链接。感谢z大！
 - 10代核显的各位请把`EFI-OC`内的`config10-igpu`重命名为`config`食用
 - 10代独显的各位请把`EFI-OC`内的`config10-egpu`重命名为`config`食用
 - 11代独显的各位请把`EFI-OC`内的`config11`重命名为`config`食用
@@ -196,3 +198,4 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 - 中文教程：[Xjn的博客](https://blog.xjn819.com/post/opencore-guide.html)
 - 中文文档 & kexts集合下载：[OpenCore中文文档](https://oc.skk.moe/)
 - 镜像下载 & 中文教程：[黑果小兵](http://blog.daliansky.net)
+- 苦苦维护的[laobamac](https::github.com/laobamac/)（bushi）
