@@ -198,4 +198,4 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 - 中文教程：[Xjn的博客](https://blog.xjn819.com/post/opencore-guide.html)
 - 中文文档 & kexts集合下载：[OpenCore中文文档](https://oc.skk.moe/)
 - 镜像下载 & 中文教程：[黑果小兵](http://blog.daliansky.net)
-- 苦苦维护的[laobamac](https::github.com/laobamac/)（bushi）
+- 苦苦维护的[laobamac](https://github.com/laobamac/)（bushi）
