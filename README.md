@@ -120,7 +120,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
 - 输入` D `然后回车来探测电脑上的端口
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-2.png)
--输入`B`回车，返回主菜单
+- 输入`B`回车，返回主菜单
 - 来到主菜单，输入` S `来查看端口探测的结果
 - 输入` A` 回车，输入` K `回车，即可导出`UTBMap.kext`文件（一般情况下会保存在当前程序的同级目录下）
   ![image](https://user-images.githubusercontent.com/99300084/206326768-84ef300a-e64e-4978-9e30-9c955d537a28.png)
