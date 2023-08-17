@@ -127,6 +127,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - 除了上述生成的`UTBMap.kext`文件以外，我们还需要配合`USBToolBox.kext`使用（仓库）
 - 将上述两个 Kext 放到 OC 的 Kexts 文件夹下面并加载，去除usbport.kext
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-5.png)
+- 并在kernel-quirks启用XhciPortLimit选项
 - 重启即可生效，至此你的 USB 基本上定制完了，尽情使用吧
 ### 安装过程
 - 准备安装U盘：参考OC官方配置，十分好用：[USB Creation](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/mac-install.html#setting-up-opencore-s-efi-environment)，包含macOS、Windows、Linux的U盘制作。
