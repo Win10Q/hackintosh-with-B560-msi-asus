@@ -28,7 +28,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - [x] 接力和隔空投送
 - [x] 板载蓝牙
 ### 必读项目
-- macOS Sonoma截止到20230715仍不支持博通网卡，请换用英特尔卡。WiFi驱动详见[zxystd](https://github.com/zxystd/)的itlwm。最新Release已提供链接。感谢z大！
+- macOS Sonoma截止到20230826只能通过OCLP使用极不稳定的驱动支持博通网卡，仍建议换用英特尔卡。WiFi驱动详见[zxystd](https://github.com/zxystd/)的itlwm。最新Release已提供链接。感谢z大！
 - 10代核显的各位请把`EFI-OC`内的`config10-igpu`重命名为`config`食用
 - 10代独显的各位请把`EFI-OC`内的`config10-egpu`重命名为`config`食用
 - 11代独显的各位请把`EFI-OC`内的`config11`重命名为`config`食用
