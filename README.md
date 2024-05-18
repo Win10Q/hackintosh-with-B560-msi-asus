@@ -4,7 +4,6 @@
 ## 硬件列表
 |项目|名称
 |-|-
-
 |CPU|AMD 5800X
 |主板1|ASUS TUF GAMING B550M PLUS WIFI
 |主板2|MSI MORTAR B550M
