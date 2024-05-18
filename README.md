@@ -1,120 +1,35 @@
-# ASUS-MSI-10-11-HACKINTOSH-OPENCORE
+# hackintosh-with-B550M-5000x
 ## 支持macOS Sonoma
-## 同步视频
 
-```
-https://www.bilibili.com/video/BV1Jd4y187ZS/
-```
-## 关于本机
-  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%9C%BA.png)
 ## 硬件列表
 |项目|名称
 |-|-
-|CPU0|Intel 10th CORE all
-|CPU1|Intel 11th CORE all
-|主板1|ASUS TUF GAMING B560M PLUS WIFI
-|主板2|MSI MORTAR B560M
-|主板3|ASUS H510-Z590 均支持（igpu已遍历
-|主板4|MSI H510-Z590 均支持（igpu已遍历
-|显卡|AMD RX/intel uhd630（自行重命名config
-|无线网卡1|AX201/200（详见最新Release与Readme）
-|无线网卡2|FV-T919(BCM94360CD)
+
+|CPU|AMD 5800X
+|主板1|ASUS TUF GAMING B550M PLUS WIFI
+|主板2|MSI MORTAR B550M
+|显卡|AMD RX
+|无线网卡|AX201/200（详见最新Release与Readme）
 ### 功能测试
 - [x] 板载声卡
 - [x] 板载网卡
 - [x] 睡眠唤醒
 - [x] CPU 变频
 - [x] 所有USB端口
-- [x] 接力和隔空投送
 - [x] 板载蓝牙
 ### 必读项目
 - macOS Sonoma截止到20230826只能通过OCLP使用极不稳定的驱动支持博通网卡，仍建议换用英特尔卡。WiFi驱动详见[zxystd](https://github.com/zxystd/)的itlwm。最新Release已提供链接。感谢z大！
-- 10代核显的各位请把`EFI-OC`内的`config10-igpu`重命名为`config`食用
-- 10代独显的各位请把`EFI-OC`内的`config10-egpu`重命名为`config`食用
-- 11代独显的各位请把`EFI-OC`内的`config11`重命名为`config`食用
-- 10代+500系要`定制hdmi`才可食用，核显参数完成，提取`edid`注入即可食用（具体请参考b站乌龙蜜桃来一打の[视频](https://www.bilibili.com/video/BV1UW4y1J7J2/)，简介文件也在库里哦~）
-### BIOS设置
-#### ASUS-11th
+#### ASUS-MSI
 <details>
 <summary>展开查看</summary>
 <pre><code>
-- disable Intel Rapid Storage Technology
+- 关闭安全启动
+- 关闭resiszebar
+- 打开大于4G解码
 最后需要按键盘上的 F10 键保存退出即可.
 </code></pre>
 </details>
 
-#### ASUS-10th-egpu
-<details>
-<summary>展开查看</summary>
-<pre><code>
-- Disabe
-- Fast Boot
-- VT-d
-- CSM
-- Enable
-- Above 4G decoding
-- OS type: Windows UEFI Mode (Clear Secure Boot Keys or choose Other type)
-- DVMT Pre-Allocated(iGPU Memory): 64MB
-最后需要按键盘上的 F10 键保存退出即可.
-</code></pre>
-</details>
-
-#### MSI-11th
-<details>
-<summary>展开查看</summary>
-<pre><code>
-- Boot -- Fast Boot -> Disabled
-- Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
-- Boot -- CSM(Compatibility Support Module) -> Disabled
-- Ai Tweaker -- Ai Overclock Tuner -> XMP
-- Advanced -- CPU configuration -- Intel Virtualization Technology -> Disabled
-- Advanced -- System Agent (SA) Configuration -- VT-D -> Disabled
-- Advanced -- System Agent (SA) Configuration -- Above 4G Decoding -> Disabled
-- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- Primary Display -> GPU Graphics
-- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- iGPU Multi-Monitor -> Disabled
-- Advanced -- PCH configruation - IOAPIC 24-119 Entries -> Enabled
-- Advanced -- PCH-FW Configuration -- TPM Device Selection -> Discrete TPM
-- Advanced -- APM Configuration -- ErP Ready -> Disabled
-- Advanced -- Network Stack Configuration -- Network Stack -> Disabled
-- Boot -- Secure Boot -- OS Type -- Other OS
-最后需要按键盘上的 F10 键保存退出即可.
-</code></pre>
-</details>
-
-#### MSI-10th-egpu
-<details>
-<summary>展开查看</summary>
-<pre><code>
-- Boot -- Fast Boot -> Disabled
-- Advanced -- PCH Sorage Configuration -- SATA Mode Selection -> AHCI
-- Boot -- CSM(Compatibility Support Module) -> Disabled
-- Ai Tweaker -- Ai Overclock Tuner -> XMP
-- Advanced -- CPU configuration -- Intel Virtualization Technology -> Disabled
-- Advanced -- System Agent (SA) Configuration -- VT-D -> Disabled
-- Advanced -- System Agent (SA) Configuration -- Above 4G Decoding -> Disabled
-- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- Primary Display -> CPU Graphics 集成显卡配置1
-- Advanced -- System Agent (SA) Configuration -- Graphics Configuration -- iGPU Multi-Monitor -> Disabled 集成显卡配置2
-- Advanced -- PCH configruation - IOAPIC 24-119 Entries -> Enabled
-- Advanced -- PCH-FW Configuration -- TPM Device Selection -> Discrete TPM
-- Advanced -- APM Configuration -- ErP Ready -> Disabled
-- Advanced -- Network Stack Configuration -- Network Stack -> Disabled
-- Boot -- Secure Boot -- OS Type -- Other OS
-最后需要按键盘上的 F10 键保存退出即可.
-</code></pre>
-</details>
-
-#### ASUS-10代单核显设置
-  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%8D%8E%E7%A1%95%E6%A0%B8%E6%98%BE.jpg)
-- 首选显卡 `处理器显示单元`
-- 初始化igpu `Enabled`
-- dvtm分配 `64mb`
-- RC6（渲染备用）`关闭`
-
-#### MSI-10代单核显设置
-  ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%BE%AE%E6%98%9F%E6%A0%B8%E6%98%BE.jpg)
-- Settings\Advanced\Integrated Graphics Configuration\Initiate Graphic Adapter `PEG`
-- Settings\Advanced\Integrated Graphics Configuration\Integrated Graphics Share Memory `64MB`
-- Settings\Advanced\Integrated Graphics Configuration\IGD Multi - Monitor `Enabled`
 ### USB定制
 - 从仓库下载 「Windows.exe」到 Windows 平台，双击即可运行
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E5%AE%9A%E5%88%B6-1.png)
@@ -190,7 +105,6 @@ Reg add HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation /v RealTimeIsU
 - `保存``重启`即可
 - ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/%E6%9B%B4%E6%96%B0oc-4.jpg)
 ### 鸣谢
-- 橙汁大佬提供SSDT的修改：[Github-orangjuc](https://github.com/OrangJuc/)
 - 定制usb转自国光大佬：[国光黑苹果blog](https://apple.sqlsec.com/)
 - 拷贝esp与更新oc转自LoonGasCoom：[LoonGasCoom](https://www.jzchen.top/)
 - 最好的入门教程：[OpenCore Install Guide](https://dortania.github.io/OpenCore-Install-Guide/)
