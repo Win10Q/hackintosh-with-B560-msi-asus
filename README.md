@@ -1,5 +1,5 @@
 # ASUS-MSI-10-11-HACKINTOSH-OPENCORE
-## 支持macOS Sonoma
+## 支持macOS Tahoe
 ## 同步视频
 
 ```
@@ -28,7 +28,6 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
 - [x] 接力和隔空投送
 - [x] 板载蓝牙
 ### 必读项目
-- macOS Sonoma截止到20230826只能通过OCLP使用极不稳定的驱动支持博通网卡，仍建议换用英特尔卡。WiFi驱动详见[zxystd](https://github.com/zxystd/)的itlwm。最新Release已提供链接。感谢z大！
 - 10代核显的各位请把`EFI-OC`内的`config10-igpu`重命名为`config`食用
 - 10代独显的各位请把`EFI-OC`内的`config10-egpu`重命名为`config`食用
 - 11代独显的各位请把`EFI-OC`内的`config11`重命名为`config`食用
@@ -155,11 +154,7 @@ https://www.bilibili.com/video/BV1Jd4y187ZS/
   ![Image text](https://github.com/Win10Q/hackintosh-with-B560-msi-asus/blob/main/img-storage/DG-5.png)
 - 把这个启动项修改一下名字上移到第一位`保存`即可
 ### 英特尔wifi
-- WIFI请加载驱动包对应版本驱动
-### 英特尔蓝牙
-- bigsur：`IntelBluetoothFirmware.kext`
-- Monterey：`IntelBluetoothFirmware.kext` `BlueToolFixup.kext`
-- Ventura：`IntelBluetoothFirmware.kext` `BlueToolFixup.kext` `IntelBTPatcher.kext`
+- WIFI请使用Heliport
 ### 开机优化
 - 三星硬盘`trim`会导致开机慢
 - 解决方法：`SetApfsTrimTimeout`设置为`0`
